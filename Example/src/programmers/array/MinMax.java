@@ -1,7 +1,5 @@
 package programmers.array;
 
-import java.text.Format;
-
 public class MinMax {
 
 	public static void main(String[] args) {
