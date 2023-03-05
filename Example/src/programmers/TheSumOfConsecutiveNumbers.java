@@ -43,7 +43,10 @@ class Sum {
         		A += 2;
         	}
         }
+        
+        // 오름차순으로 정렬
         nums.sort(Comparator.naturalOrder());
+        // ArrayList를 Array로 변환
         answer = nums.stream().mapToInt(i->i).toArray();
         
         System.out.println(Arrays.toString(answer));
