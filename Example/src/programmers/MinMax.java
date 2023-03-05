@@ -1,4 +1,4 @@
-package programmers.array;
+package programmers;
 
 public class MinMax {
 
