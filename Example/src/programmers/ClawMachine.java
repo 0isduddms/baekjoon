@@ -29,7 +29,10 @@ class Claw {
         			board[j][moves[i] - 1] = 0;			// 그로인해 빈칸이 생성됨
 	        		if(basket.size() > 1) {	// 두번째 뽑을 때부터 인형 비교를 함
 	        			// 마지막으로 뽑은 인형과 그 전에 뽑은 인형이 같은 경우 인형 삭제
-	        			if(basket.indexOf(basket.get(basket.size() - 1)) == basket.indexOf(basket.get(basket.size() - 2))) {
+	        			System.out.println(basket.get(basket.size() - 1));
+	        			System.out.println(basket.get(basket.size() - 2));
+	        			System.out.println("----------------------------");
+	        			if(basket.get(basket.size() - 1) == basket.get(basket.size() - 2)) {
 	        				basket.remove(basket.get(basket.size() - 1));
 	        				basket.remove(basket.get(basket.size() - 1));
 	        				answer += 2;
@@ -41,8 +44,6 @@ class Claw {
         		
         	}
         }
-        System.out.println(answer);
-        System.out.println(basket);
         
         return answer;
     }
